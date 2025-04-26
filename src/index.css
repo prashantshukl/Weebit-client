@@ -3,4 +3,5 @@
 
 a.active hr {
     display: block;
+    background-color: rgba(127, 63, 10, 0.899);
 }

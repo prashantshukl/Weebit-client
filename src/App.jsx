@@ -9,7 +9,7 @@ import Cart from './pages/Cart.jsx'
 import Contact from './pages/Contact.jsx'
 import Orders from './pages/Orders.jsx'
 import PlaceOrder from './pages/PlaceOrder.jsx'
-import Products from './pages/Products.jsx'
+import Product from './pages/Product.jsx'
 import Navbar from './components/Navbar.jsx'
 
 
@@ -26,7 +26,7 @@ const App = () => {
         <Route path='/contact' element={<Contact />} />
         <Route path='/orders' element={<Orders />} />
         <Route path='/place-order' element={<PlaceOrder />} />
-        <Route path='/product' element={<Products />} />
+        <Route path='/product' element={<Product />} />
       </Routes>
     </div>
   )

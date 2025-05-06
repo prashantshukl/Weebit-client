@@ -5,8 +5,7 @@ import { ShopContext } from '../context/ShopContext.jsx';
 
 const Navbar = () => {
     const [visible, setVisible] = useState(false);
-    const {setShowSearch, getCartCount} = useContext(ShopContext);
-    const navigate = useNavigate();
+    const {setShowSearch, getCartCount, navigate} = useContext(ShopContext);
 
     const searchHandler = () => {
         navigate('/collection');

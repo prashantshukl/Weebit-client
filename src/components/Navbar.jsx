@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react'
 import {assets} from '../assets/assets.js'
-import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom'
+import { Link, NavLink} from 'react-router-dom'
 import { ShopContext } from '../context/ShopContext.jsx';
 
 const Navbar = () => {
@@ -44,7 +44,7 @@ const Navbar = () => {
             <img onClick={searchHandler} src={assets.search_icon} alt="" srcset="" className='w-5 cursor-pointer'/>
 
             <div className='group relative'>
-                <img className='w-5 cursor-pointer' src={assets.profile_icon} alt="" srcset="" />
+                <Link to={'/login'}><img className='w-5 cursor-pointer' src={assets.profile_icon} alt="" srcset="" /></Link>
 
                 <div className='group-hover:block hidden dropdown-menu absolute right-0 pt-4'>
                     <div className='flex flex-col gap-2 w-36 py-3 px-5 bg-slate-100 text-gray-500'>
